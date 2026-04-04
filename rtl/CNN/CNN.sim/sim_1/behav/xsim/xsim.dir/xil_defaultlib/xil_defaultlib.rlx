@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+C:/Users/nikhi/CNN/rtl/CNN/CNN.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,
+C:/Users/nikhi/CNN/rtl/PE_tb.v,1775334212,verilog,,,,PE_tb,,,../../../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/nikhi/CNN/rtl/lb_tb.v,1775330444,verilog,,,,lb_tb,,,../../../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/nikhi/CNN/rtl/linebuffer.v,1775330105,verilog,,C:/Users/nikhi/CNN/rtl/PE_tb.v,,linebuffer,,,../../../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
