@@ -1,2 +1,10 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nikhi/CNN/rtl/PE_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PE_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nikhi/CNN/rtl/PE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nikhi/CNN/rtl/linebuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module linebuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nikhi/CNN/rtl/max_pool.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module max_pool
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nikhi/CNN/rtl/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nikhi/CNN/rtl/tm_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tm_tb

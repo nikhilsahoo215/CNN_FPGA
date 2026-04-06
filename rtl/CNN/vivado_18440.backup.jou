@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Apr  5 11:15:11 2026
+# Process ID         : 18440
+# Current directory  : C:/Users/nikhi/CNN/rtl/CNN
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent26668 C:\Users\nikhi\CNN\rtl\CNN\CNN.xpr
+# Log file           : C:/Users/nikhi/CNN/rtl/CNN/vivado.log
+# Journal file       : C:/Users/nikhi/CNN/rtl/CNN\vivado.jou
+# Running On         : Libu
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16802 MB
+# Swap memory        : 21474 MB
+# Total Virtual      : 38277 MB
+# Available Virtual  : 20344 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nikhi/CNN/rtl/CNN/CNN.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top PE [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source PE_tb.tcl
+run 10 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source PE_tb.tcl
+run 10 us
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/PE_tb/clk}} {{/PE_tb/rst}} {{/PE_tb/w0_pe}} {{/PE_tb/w1_pe}} {{/PE_tb/w2_pe}} {{/PE_tb/w3_pe}} {{/PE_tb/w4_pe}} {{/PE_tb/w5_pe}} {{/PE_tb/w6_pe}} {{/PE_tb/w7_pe}} {{/PE_tb/w8_pe}} {{/PE_tb/valid_out_pe}} {{/PE_tb/sum}} {{/PE_tb/i}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source PE_tb.tcl
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/PE_tb/clk}} {{/PE_tb/rst}} {{/PE_tb/w0_pe}} {{/PE_tb/w1_pe}} {{/PE_tb/w2_pe}} {{/PE_tb/w3_pe}} {{/PE_tb/w4_pe}} {{/PE_tb/w5_pe}} {{/PE_tb/w6_pe}} {{/PE_tb/w7_pe}} {{/PE_tb/w8_pe}} {{/PE_tb/valid_out_pe}} {{/PE_tb/sum}} {{/PE_tb/i}} 
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source PE_tb.tcl
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/PE_tb/clk}} {{/PE_tb/rst}} {{/PE_tb/w0_pe}} {{/PE_tb/w1_pe}} {{/PE_tb/w2_pe}} {{/PE_tb/w3_pe}} {{/PE_tb/w4_pe}} {{/PE_tb/w5_pe}} {{/PE_tb/w6_pe}} {{/PE_tb/w7_pe}} {{/PE_tb/w8_pe}} {{/PE_tb/valid_out_pe}} {{/PE_tb/sum}} {{/PE_tb/i}} 
+relaunch_sim

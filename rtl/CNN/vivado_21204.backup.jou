@@ -1,0 +1,169 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Apr  5 11:36:00 2026
+# Process ID         : 21204
+# Current directory  : C:/Users/nikhi/CNN/rtl/CNN
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent31972 C:\Users\nikhi\CNN\rtl\CNN\CNN.xpr
+# Log file           : C:/Users/nikhi/CNN/rtl/CNN/vivado.log
+# Journal file       : C:/Users/nikhi/CNN/rtl/CNN\vivado.jou
+# Running On         : Libu
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16802 MB
+# Swap memory        : 21474 MB
+# Total Virtual      : 38277 MB
+# Available Virtual  : 20416 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nikhi/CNN/rtl/CNN/CNN.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source PE_tb.tcl
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/PE_tb/clk}} {{/PE_tb/rst}} {{/PE_tb/w0_pe}} {{/PE_tb/w1_pe}} {{/PE_tb/w2_pe}} {{/PE_tb/w3_pe}} {{/PE_tb/w4_pe}} {{/PE_tb/w5_pe}} {{/PE_tb/w6_pe}} {{/PE_tb/w7_pe}} {{/PE_tb/w8_pe}} {{/PE_tb/valid_out_pe}} {{/PE_tb/sum}} {{/PE_tb/i}} 
+relaunch_sim
+relaunch_sim
+add_files -norecurse C:/Users/nikhi/CNN/rtl/top_module.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_module [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/nikhi/CNN/rtl/tm_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_module [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/nikhi/CNN/rtl/PE_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/nikhi/CNN/rtl/PE_tb.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top PE_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_module [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+export_ip_user_files -of_objects  [get_files C:/Users/nikhi/CNN/rtl/tm_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/nikhi/CNN/rtl/tm_tb.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/nikhi/CNN/rtl/tm_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tm_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/clk}} {{/tm_tb/rst}} {{/tm_tb/valid_in}} {{/tm_tb/data_in}} {{/tm_tb/valid_out}} {{/tm_tb/mem_fetch}} {{/tm_tb/mem}} {{/tm_tb/ctr}} {{/tm_tb/sum}} {{/tm_tb/i}} {{/tm_tb/sum_valid_out}} 
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/clk}} {{/tm_tb/rst}} {{/tm_tb/valid_in}} {{/tm_tb/data_in}} {{/tm_tb/valid_out}} {{/tm_tb/mem_fetch}} {{/tm_tb/mem}} {{/tm_tb/ctr}} {{/tm_tb/sum}} {{/tm_tb/i}} 
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/clk}} {{/tm_tb/rst}} {{/tm_tb/valid_in}} {{/tm_tb/data_in}} {{/tm_tb/valid_out}} {{/tm_tb/mem_fetch}} {{/tm_tb/mem}} {{/tm_tb/ctr}} {{/tm_tb/sum}} {{/tm_tb/i}} 
+relaunch_sim
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/clk}} {{/tm_tb/rst}} {{/tm_tb/valid_in}} {{/tm_tb/data_in}} {{/tm_tb/valid_out}} {{/tm_tb/mem_fetch}} {{/tm_tb/mem}} {{/tm_tb/ctr}} {{/tm_tb/sum}} {{/tm_tb/i}} 
+relaunch_sim
+run 10 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/clk}} {{/tm_tb/rst}} {{/tm_tb/valid_in}} {{/tm_tb/data_in}} {{/tm_tb/valid_out}} {{/tm_tb/mem_fetch}} {{/tm_tb/mem}} {{/tm_tb/ctr}} {{/tm_tb/sum}} {{/tm_tb/i}} 
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/clk}} {{/tm_tb/rst}} {{/tm_tb/valid_in}} {{/tm_tb/data_in}} {{/tm_tb/valid_out}} {{/tm_tb/mem_fetch}} {{/tm_tb/mem}} {{/tm_tb/ctr}} {{/tm_tb/sum}} {{/tm_tb/i}} 
+relaunch_sim
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/lb/w0}} {{/tm_tb/tm/lb/w1}} {{/tm_tb/tm/lb/w2}} {{/tm_tb/tm/lb/w3}} {{/tm_tb/tm/lb/w4}} {{/tm_tb/tm/lb/w5}} {{/tm_tb/tm/lb/w6}} {{/tm_tb/tm/lb/w7}} {{/tm_tb/tm/lb/w8}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/pe1/add}} 
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/nikhi/CNN/rtl/max_pool.v
+update_compile_order -fileset sources_1
+save_wave_config {C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg}
+save_wave_config {C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+relaunch_sim
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+relaunch_sim
+relaunch_sim

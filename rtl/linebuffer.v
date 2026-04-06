@@ -1,14 +1,15 @@
 module linebuffer #(parameter IMG_W = 200,
                     parameter IMG_H = 200,
-                    parameter DATA_WIDTH = 8)
+                    parameter DATA_WIDTH = 8,
+                    parameter DIM = 3)
 (
     input clk, rst,
     input valid_in,
-    input [DATA_WIDTH-1:0] pixel_in,
+    input signed [DATA_WIDTH-1:0] pixel_in,
 
-    output reg [DATA_WIDTH-1:0] w0,w1,w2,
-    output reg [DATA_WIDTH-1:0] w3,w4,w5,
-    output reg [DATA_WIDTH-1:0] w6,w7,w8,
+    output reg signed [DATA_WIDTH-1:0] w0,w1,w2,
+    output reg signed [DATA_WIDTH-1:0] w3,w4,w5,
+    output reg signed [DATA_WIDTH-1:0] w6,w7,w8,
 
     output reg valid_out,
     output reg mem_fetch
@@ -33,10 +34,10 @@ reg ctr;
 reg last_line;
 
 // Shift registers (MUST be reg)
-reg [DATA_WIDTH-1:0] r0[0:2];
-reg [DATA_WIDTH-1:0] r1[0:2];
-reg [DATA_WIDTH-1:0] r2[0:2];
-reg [DATA_WIDTH-1:0] r3[0:2];
+reg [DATA_WIDTH-1:0] r0[0:DIM-1];
+reg [DATA_WIDTH-1:0] r1[0:DIM-1];
+reg [DATA_WIDTH-1:0] r2[0:DIM-1];
+// reg [DATA_WIDTH-1:0] r3[0:DIM-1];
 
 // wire is_border = (row == 0) || (row == PAD_H-1) ||
 //                   (col == 0) || (col == PAD_W-1);
@@ -99,20 +100,7 @@ always @(posedge clk) begin
             r2[i] = 0;
         end
     end
-    // case(state)
-    // PAD_0:pixel_pad <= 0;
-    // PAD_1:begin
-    //     if(mem_fetch)begin
-    //         ctr <= 1;        // the ctr is to avoid that previous stored value in reg to load into line
-    //         if(ctr)begin
-    //             line3[col] <= line2[col];
-    //             line2[col] <= line1[col];
-    //             line1[col] <= pixel_pad;
-    //         end
-    //     end
-    //     else ctr <= 0;
-    // end
-    // endcase
+
     else if (valid_in) begin
 
         // Shift window
@@ -128,14 +116,14 @@ always @(posedge clk) begin
         r2[1] <= r2[2];
         r2[2] <= line1[c_ptr];
 
-        r3[0] <= r3[1];
-        r3[1] <= r3[2];
-        r3[2] <= pixel_pad;
+        // r3[0] <= r3[1];
+        // r3[1] <= r3[2];
+        // r3[2] <= pixel_pad;
 
         // Update line buffers
         
         if(mem_fetch)begin
-            ctr <= 1;        // the ctr is to avoid that previous stored value in reg to load into line
+            ctr <= 1;        // the ctr is to avoid the previous stored value in reg to load into line
             if(ctr)begin
                 line3[col] <= line2[col];
                 line2[col] <= line1[col];

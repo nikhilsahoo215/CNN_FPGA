@@ -1,0 +1,21 @@
+srcscan starts
+INFO: analyzing module PE (VERI-9002)
+INFO: analyzing module linebuffer (VERI-9002)
+INFO: analyzing module max_pool (VERI-9002)
+C:/Users/nikhi/CNN/rtl/max_pool.v(75): WARNING: syntax error near ')' (VERI-1137)
+C:/Users/nikhi/CNN/rtl/max_pool.v(80): WARNING: syntax error near 'else' (VERI-1137)
+C:/Users/nikhi/CNN/rtl/max_pool.v(80): ERROR: Verilog 2000 keyword 'else' used in incorrect context (VERI-2344)
+C:/Users/nikhi/CNN/rtl/max_pool.v(75): ERROR: 'ctr' is not declared (VERI-1128)
+C:/Users/nikhi/CNN/rtl/max_pool.v(77): ERROR: 'ctr' is not declared (VERI-1128)
+C:/Users/nikhi/CNN/rtl/max_pool.v(83): ERROR: 'ctr' is not declared (VERI-1128)
+C:/Users/nikhi/CNN/rtl/max_pool.v(83): ERROR: 'ctr' is not declared (VERI-1128)
+INFO: analyzing module top_module (VERI-9002)
+Listing tops:
+VeriTop library:xil_defaultlib mod:top_module
+END of tops
+C:/Users/nikhi/CNN/rtl/top_module.v(1): INFO: compiling module 'top_module_default' (VERI-1018)
+ModName: linebuffer(IMG_W=8,IMG_H=8)
+ModName: max_pool(IMG_W=8,IMG_H=8)
+BaseName linebuffer has 1 entries
+BaseName max_pool has 1 entries
+srcscan exits with return value 0

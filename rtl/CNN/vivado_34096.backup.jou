@@ -1,0 +1,152 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Apr  4 22:42:20 2026
+# Process ID         : 34096
+# Current directory  : C:/Users/nikhi/CNN/rtl/CNN
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent23780 C:\Users\nikhi\CNN\rtl\CNN\CNN.xpr
+# Log file           : C:/Users/nikhi/CNN/rtl/CNN/vivado.log
+# Journal file       : C:/Users/nikhi/CNN/rtl/CNN\vivado.jou
+# Running On         : Libu
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16802 MB
+# Swap memory        : 21474 MB
+# Total Virtual      : 38277 MB
+# Available Virtual  : 17632 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nikhi/CNN/rtl/CNN/CNN.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source lb_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source lb_tb.tcl
+close_sim
+launch_simulation
+source lb_tb.tcl
+close_sim
+launch_simulation
+source lb_tb.tcl
+close_sim
+launch_simulation
+source lb_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source lb_tb.tcl
+close_sim
+launch_simulation
+source lb_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source lb_tb.tcl
+close_sim
+launch_simulation
+source lb_tb.tcl
+close_sim
+launch_simulation
+source lb_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source lb_tb.tcl
+close_sim
+launch_simulation
+source lb_tb.tcl
+close_sim
+launch_simulation
+source lb_tb.tcl
+close_sim
+launch_simulation
+source lb_tb.tcl
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source lb_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source lb_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source lb_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source lb_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source lb_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source lb_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source lb_tb.tcl
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source lb_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+launch_simulation
+source lb_tb.tcl
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 us
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/nikhi/CNN/rtl/PE_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top PE [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/nikhi/CNN/rtl/PE_tb.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top PE_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+export_ip_user_files -of_objects  [get_files C:/Users/nikhi/CNN/rtl/lb_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/nikhi/CNN/rtl/lb_tb.v
+launch_simulation
+launch_simulation
+launch_simulation
+save_wave_config {C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+set_property xsim.view C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg [get_filesets sim_1]
+launch_simulation
+update_compile_order -fileset sim_1
+launch_simulation
+relaunch_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source PE_tb.tcl
+close_sim
+close_sim

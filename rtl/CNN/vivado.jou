@@ -3,10 +3,10 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Sat Apr  4 22:42:20 2026
-# Process ID         : 34096
+# Start of session at: Sun Apr  5 23:46:16 2026
+# Process ID         : 27448
 # Current directory  : C:/Users/nikhi/CNN/rtl/CNN
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent23780 C:\Users\nikhi\CNN\rtl\CNN\CNN.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent32772 C:\Users\nikhi\CNN\rtl\CNN\CNN.xpr
 # Log file           : C:/Users/nikhi/CNN/rtl/CNN/vivado.log
 # Journal file       : C:/Users/nikhi/CNN/rtl/CNN\vivado.jou
 # Running On         : Libu
@@ -19,7 +19,186 @@
 # Host memory        : 16802 MB
 # Swap memory        : 21474 MB
 # Total Virtual      : 38277 MB
-# Available Virtual  : 17632 MB
+# Available Virtual  : 16341 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/nikhi/CNN/rtl/CNN/CNN.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/valid_in}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/data_in}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/pool_data}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/pool_en}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/ctr}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/row_1_max}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/row_2_max}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/col}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/row}} 
+relaunch_sim
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/line1}} 
+relaunch_sim
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/line1}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/r1}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/row_1_max}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/row_2_max}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/ctr}} 
+relaunch_sim
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/pool_en}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/valid_in}} 
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/pe1/valid_out}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/valid_in}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/data_in}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/pool_data}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/line1}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/r1}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/col}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/row}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/pool_en}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/ctr}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/row_1_max}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/row_2_max}} 
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/valid_in}} {{/tm_tb/tm/mp/data_in}} {{/tm_tb/tm/mp/pool_data}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/r1}} {{/tm_tb/tm/mp/col}} {{/tm_tb/tm/mp/row}} {{/tm_tb/tm/mp/pool_en}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/line1}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/ctr}} {{/tm_tb/tm/mp/row_1_max}} {{/tm_tb/tm/mp/row_2_max}} 
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/valid_in}} {{/tm_tb/tm/mp/data_in}} {{/tm_tb/tm/mp/pool_data}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/line1}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/r1}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/ctr}} {{/tm_tb/tm/mp/row_1_max}} {{/tm_tb/tm/mp/row_2_max}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/col}} {{/tm_tb/tm/mp/row}} 
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/valid_in}} {{/tm_tb/tm/mp/data_in}} {{/tm_tb/tm/mp/pool_data}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/line1}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/r1}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/col}} {{/tm_tb/tm/mp/row}} {{/tm_tb/tm/mp/pool_en}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/ctr}} {{/tm_tb/tm/mp/row_1_max}} {{/tm_tb/tm/mp/row_2_max}} 
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/valid_in}} {{/tm_tb/tm/mp/data_in}} {{/tm_tb/tm/mp/pool_data}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/line1}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/r1}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/col}} {{/tm_tb/tm/mp/row}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/pool_en}} 
+current_wave_config {lb_tb_behav1.wcfg}
+add_wave {{/tm_tb/tm/mp/ctr}} {{/tm_tb/tm/mp/row_1_max}} {{/tm_tb/tm/mp/row_2_max}} 
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/nikhi/CNN/rtl/paul_pool.v
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikhi/CNN/rtl/CNN/lb_tb_behav1.wcfg
+source tm_tb.tcl
+close_sim
