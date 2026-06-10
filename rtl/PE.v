@@ -1,7 +1,7 @@
 module PE #(parameter DATA_WIDTH = 8
             )
 ( 
-    input clk,rst,valid_out,
+    input clk,rst,valid_in,
     input signed [DATA_WIDTH-1:0] w0,w1,w2,
     input signed [DATA_WIDTH-1:0] w3,w4,w5,
     input signed [DATA_WIDTH-1:0] w6,w7,w8,
@@ -44,9 +44,10 @@ always@(posedge clk)begin
         ker[3]=1; ker[4]=1; ker[5]=4;
         ker[6]=1; ker[7]=1; ker[8]=4;
     end
-    else if(valid_out)begin
+    else if(valid_in)begin
         sum <= acc_comb;
         pool_en <= 1;
     end
+    else pool_en <= 0;
 end
 endmodule

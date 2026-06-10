@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module tm_tb;
+module PE_tb;
     reg clk,rst;
     // reg valid_in;
     // reg [7:0]data_in;

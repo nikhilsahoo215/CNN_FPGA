@@ -20,9 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module paul_pool(input clk,input [31:0] data,input en_in,output reg  en_out,output reg [31:0] data_out);
+module paul_pool #(parameter WIDTH = 8)
+(input clk,input [2*WIDTH-1:0] data,input en_in,output reg  en_out,output reg [2*WIDTH-1:0] data_out);
 parameter rowlength=6;
-parameter pixel_width=32;
+parameter pixel_width=2*WIDTH;
 reg [2:0] state;
 reg [pixel_width-1:0] row1 [(rowlength/2)-1:0];
 reg [pixel_width-1:0] temp;

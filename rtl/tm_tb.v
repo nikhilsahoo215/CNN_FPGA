@@ -21,7 +21,7 @@ module tm_tb;
         ctr = 0;
         valid_in = 0;
         for(i = 0;i<64;i=i+1)begin
-                mem[i] = i;
+                mem[i] = 63-i;
         end
         #20
         rst = 0;

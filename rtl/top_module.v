@@ -6,7 +6,7 @@ module top_module #(parameter IMG_W = 200,
     input signed [DATA_WIDTH-1:0] data_in,
 
     output reg signed [2*DATA_WIDTH-1:0] sum_tb,
-    output reg valid_out_pe, 
+    output reg valid_out_pe,
     output reg mem_fetch_tb
 );
 
@@ -48,7 +48,7 @@ end
 
 linebuffer #(8,8,8) lb(clk,rst,valid_in,data_in,w0,w1,w2,w3,w4,w5,w6,w7,w8,valid_out,mem_fetch);
 PE #(8) pe1(clk,rst,valid_out_pe,w0_pe,w1_pe,w2_pe,w3_pe,w4_pe,w5_pe,w6_pe,w7_pe,w8_pe,sum,pool_en);
-max_pool #(8,8,8) mp(clk,rst,pool_en,sum,pool_data,pool_done);
+max_pool #(8,8,8,2) mp(clk,rst,pool_en,sum,pool_data,pool_done);
 // paul_pool pp(clk,sum,pool_en,pool_done,pool_data);
 // PE #(8) pe1(clk,rst,valid_out,w0,w1,w2,w3,w4,w5,w6,w7,w8,sum);
 
